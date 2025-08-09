@@ -1,2 +1,3 @@
 # jstart
-A code repo for javascript.
+jstart is a simple starter template for JavaScript projects.
+.
