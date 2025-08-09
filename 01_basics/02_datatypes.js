@@ -13,23 +13,34 @@ console.log( 3
 3
 )  // code readability should be high
 
-console.log(3+3)
+console.log(3+3) //this is how we write it .
 
 
 
-let name ="shreyash" //str ""
-let age = "17"   // number => 2 to power 53
+let name ="shreyash" //string is just a bunch of characters wrapped in quotes.
+
+
+let age = "17"   // number => 2 to power 53 is the limit
+
+
 let isloggedIn = false  // Boolean true/false
+
+
 let State; //Undefined
+
+
 // BigInt //9007199254740991n // If you want super big integers beyond 
-// null  => Stand Alone value
-//undefined =>
+//undefined => nothing assigned yet.
 //symbol => unique
+//object => ..
 
-//object =>
-
+console.log(typeof false) // boolean
 console.log(typeof undefined); //undefined
-console.log(typeof null);  // object 
+console.log(typeof null);  // object  
+// null  => Stand Alone value (i put nothing here on purpose)
+// Back in the day when JS was made, this was a bug in the engine that never 
+// got fixed because too many programs already depend on it. So null is an obj datatype
+
 
 
 
