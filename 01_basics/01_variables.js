@@ -17,7 +17,7 @@ accountCity = "jhapa" // DON'T do this: accountCity = "jhapa"
 // Because without 'let' or 'const', you create a global variable by accident.
 // This pollutes the global scope and can cause sneaky bugs later.
 // Plus, in strict mode, this will throw an error and break your code.
-// Always declare variables properly to keep your code clean and safe.
+// Always declare variables properly to keep your code clean and safe,
 
 console.table([accountId , accountEmail , accountPassword , accountCity])
 
