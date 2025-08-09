@@ -8,10 +8,10 @@ accountCity="Biratnagar"
 // accountId = 515151 // not allowed
 
 /*
-Avoid var because it can cause scope problems. Use let or const instead.
+Avoid var because it can cause scope problems. Use let instead.
 
  */
-AccountEmail = "getonthefloorsbro"
+accountEmail = "getonthefloorsbro"
 accountPassword = "112345"
 accountCity = "jhapa"
 
