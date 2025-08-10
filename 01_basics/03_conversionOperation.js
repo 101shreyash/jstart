@@ -52,6 +52,16 @@ let str2 = " shreyash"
 
 let sumof2str = str1+str2
 console.log(sumof2str);
+
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2");
+
+
+
+
+
  
 
 
