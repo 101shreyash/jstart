@@ -1,0 +1,140 @@
+JavaScript — Straight Facts
+1. Origin
+Created 1995 by Brendan Eich at Netscape in 10 days.
+
+First: Mocha → LiveScript → JavaScript (marketing, not Java).
+
+Built to make web pages interactive.
+
+2. ECMAScript (ES)
+JavaScript = implementation, ECMAScript = standard/spec.
+
+Maintained by ECMA International, TC39 committee.
+
+Major versions:
+
+ES3 (1999) — baseline for old browsers.
+
+ES5 (2009) — strict mode, JSON, map, filter, forEach.
+
+ES6 / ES2015 — let, const, arrow functions, classes, promises, template literals, destructuring, default parameters, spread/rest operators.
+
+Post-ES6 — yearly updates:
+
+ES2016: Array.prototype.includes, ** exponentiation.
+
+ES2017: async/await, Object.values(), Object.entries().
+
+ES2018: Rest/spread for objects, Promise.finally().
+
+ES2020: Optional chaining ?., nullish coalescing ??, BigInt.
+
+ES2021+: WeakRefs, logical assignment operators, Array.at().
+
+3. MDN
+Use for syntax, API docs, browser support.
+
+Check spec if you need exact definition, but MDN is faster for dev work.
+
+MDN JavaScript Docs
+
+4. Why Not var
+Scope: var = function-scoped, let/const = block-scoped.
+
+Hoisting: var is hoisted & set to undefined — leads to silent bugs.
+
+Redeclaration: Allowed with var.
+
+Modern practice:
+
+const = default.
+
+let = only if reassignment needed.
+
+var = legacy code only.
+
+5. Core Concepts
+Execution Context: Memory + code execution phase.
+
+Call Stack: LIFO execution order.
+
+Hoisting: Declarations go up, initializations don’t.
+
+Scope Chain: Nested scopes check from local → global.
+
+Closures: Functions remember outer variables.
+
+Prototypes: Objects inherit methods via prototype chain.
+
+this Binding:
+
+Default → undefined (strict) / global object (non-strict).
+
+Method → object before dot.
+
+Arrow functions → lexical this.
+
+Event Loop: Handles async tasks (macrotasks vs microtasks).
+
+DOM APIs: querySelector, event listeners, manipulation.
+
+Modules: ES Modules (import/export) vs CommonJS (require/module.exports).
+
+Memory Management: GC frees unused objects, avoid leaks.
+
+Type Coercion:
+
+== → loose comparison (coercion).
+
+=== → strict comparison (no coercion).
+
+6. Useful Built-ins
+Array: map, filter, reduce, find, every, some, flat, includes.
+
+Object: keys, values, entries, assign, fromEntries.
+
+String: includes, startsWith, endsWith, split, trim, padStart.
+
+Number: parseInt, parseFloat, toFixed, isNaN, isFinite.
+
+Math: random, floor, ceil, max, min, pow.
+
+Date: basic time operations.
+
+7. Error Handling
+try...catch...finally.
+
+Custom errors with throw new Error('message').
+
+Async errors with try...catch inside async functions or .catch() on promises.
+
+8. Asynchronous JS
+Callbacks → old way, nesting hell.
+
+Promises → .then() / .catch().
+
+Async/Await → cleaner syntax, still uses promises under the hood.
+
+Fetch API → HTTP requests.
+
+WebSockets → real-time data.
+
+9. Performance & Best Practices
+Minimize global variables.
+
+Debounce/throttle for events like scroll or resize.
+
+Avoid blocking the main thread.
+
+Use const for constants, let for variables.
+
+Prefer strict mode ('use strict').
+
+10. Mental Model
+JS = single-threaded, async-capable via event loop.
+
+Functions = first-class citizens.
+
+Everything (almost) is an object.
+
+Learn by building → breaking → debugging → fixing.
