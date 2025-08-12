@@ -35,3 +35,30 @@ const myFunction = function(){
 
 // Data types of Nonprimitive datatypes are always obj except for the function whose datatype is fucntionobject
 
+// ++++++++++++++++++++++++++++++ Memory , Memories and How it Works  ++++++++++++++++++++++++++++++++++++4
+
+
+// Stack (Primitive)
+ 
+let defautTheme = "dark"
+themeImUsing = defautTheme
+themeImUsing = "Light"
+
+console.log(defautTheme);
+console.log(themeImUsing);
+
+//Heap (Nonprimitive)
+
+ let userOne = {
+    email :"omshrestha@gmail.com",
+    phno : 9800000000
+}
+
+let userTwo = userOne
+
+userTwo.email = "bronishupreti@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
