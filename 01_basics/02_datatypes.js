@@ -20,7 +20,8 @@ console.log(3+3) //this is how we write it .
 let name ="shreyash" //string is just a bunch of characters wrapped in quotes.
 
 
-let age = "17"   // number => 2 to power 53 is the limit
+let age = 17  // number => 2 to power 53 is the limit
+
 
 
 let isloggedIn = false  // Boolean true/false
