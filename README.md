@@ -1,2 +1,1 @@
-# jstart
-jstart is a simple starter template for JavaScript project.
+This guide covers the essential concepts of JavaScript that every developer should understand. It’s organized, clear, and practical think of it like mini MDN but structured for quick learning and easy reference. I wrote this as a personal reference to come back to whenever I forget something. Studying it will give you a solid foundation in JS, whether you’re building projects, solving problems, or preparing for interviews.
