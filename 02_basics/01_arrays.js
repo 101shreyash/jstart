@@ -18,9 +18,9 @@ const myArray2 = new Array(1 , 2, 3 , "imbusynotfree", "hahaha")
 // console.log( typeof myArray); // obj 
 
 const Heros = ["batman" , "superman", "Flash", "Shreyash"]
-// console.log(Heros[0]); // batman
-// console.log(Heros[3]); //Shreyash
-// console.log(Heros[4]); // undefined
+console.log(Heros[0]); // batman
+console.log(Heros[3]); //Shreyash
+console.log(Heros[4]); // undefined
 
 
 //  *************************** Arrays Methods ***************************************
@@ -67,6 +67,18 @@ console.log( typeof AnotherArray);  // string not an array anymore
 
 
 
+// ***********slice & splice********
+
+const mrArray = [2 , 3, 4, 5, "ilovecaffeine"]
+console.log(mrArray.slice(1 , 3)); //3 , 4 
+console.log(myArray);  // [ 0, 1, 2, 'shreyash', true ]
+// slice returns a new array of selected elements without changing the original array,
+
+
+
+console.log(mrArray.splice(1,3)); // 3 , 4, 5, 
+console.log(mrArray); // [ 2, 'ilovecaffeine' ]
+// splice removes (and optionally adds) elements from the original array and returns the removed elements.
 
 
 
