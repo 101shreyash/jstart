@@ -2,13 +2,14 @@ const marvel_heros = ["thor", "ironman", "spiderman"]
 const dc_heros = ["Superman", "Batman", "flash"]
 
 marvel_heros.push(dc_heros)
-console.log(marvel_heros);
+// console.log(marvel_heros);
 // Pushes the entire dc_heros array as a single element into marvel_heros
 // Result: ["thor", "ironman", "spiderman", ["Superman", "Batman", "flash"]]
 
 
  const everyheros = [...marvel_heros, ...dc_heros]
- console.log(everyheros);
+
+ console.log(everyheros); //["thor", "ironman", "spiderman", "Superman", "Batman", "flash"]
  console.log(marvel_heros); //[ 'thor', 'ironman', 'spiderman' ]
  console.log(dc_heros); // [ 'Superman', 'Batman', 'flash' ]
  console.log(everyheros[3]); //Superman
@@ -34,3 +35,32 @@ console.log(marvel_heros); //[ 'thor', 'ironman', 'spiderman' ]
 // [ 'thor', 'ironman', 'spiderman', 'Superman', 'Batman', 'flash' ]
 
 
+const listOfArrays = [2, 3, 4, 5, [6, 7, 8 , [4 , 9 , 11 , "Shreyash",  [true , "Gautam", ]]]]
+const realListOfArrays = listOfArrays.flat(Infinity)
+console.log(realListOfArrays); //[ 2, 3, 4, 5, 6, 7, 8, 4, 9, 11, 'Shreyash', true, 'Gautam' ]
+
+// That’s basically a nested array (an array inside an array inside an array).
+// flat(depth) is a method that removes nested arrays and brings everything into a single array.
+
+
+
+console.log(Array.isArray("Shreyash")); //false
+// Array.isArray() checks if the given value is actually an array or not
+// "Shreyash" is just a string, not an array → so it returns false
+// Example: Array.isArray([1,2,3]) would return true
+
+
+
+console.log(Array.from("Shreyash"));
+
+// Array.from() takes anything that's iterable (can be looped over like a string, set, map, etc.)
+// Here the string "Shreyash" is iterable character by character
+// So Array.from("Shreyash") breaks it down into an array of each letter individually
+// Final output: ['S','h','r','e','y','a','s','h']
+
+
+let score1 = 100
+let score2 = 200
+let score3 = 300
+
+console.log(Array.of(score1, score2, score3)); // [ 100, 200, 300 ]
