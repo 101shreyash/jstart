@@ -48,10 +48,29 @@ console.log(jsUSer);
 
 
 
-Object.freeze(jsUSer)
+// Object.freeze(jsUSer)
 jsUSer.name = "Chadshreyashme" //
 // Freeze the jsUSer object to make it immutable
 // After freezing, you cannot change, add, or delete any property
 
 
+jsUSer.greeting = function(){
+  console.log("Hello Js User");
+  
+}
+ jsUSer.greetingTwo = function(){
+  console.log(`Hello js user ${this.name}`);
+  
+ }
 
+
+jsUSer.greeting() // Hello JsUSer
+jsUSer.greetingTwo() // Hello js user Chadshreyashme
+
+// Added a method 'greetingTwo' to jsUSer object.
+// This is an object method because it’s a function stored inside an object property.
+// Inside the method, 'this' refers to the object calling the method (jsUSer).
+// Using template literals, it prints "Hello js user" followed by the jsUSer’s 'name' property.
+
+
+  
