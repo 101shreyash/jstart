@@ -28,4 +28,4 @@ bio: 'if she can say a b c she is redy for the d ',
 
  // Both {} and new Object() create object, 
 // but {} is cleaner, faster, and preferred in modern JS, 
-// while new Object() is old-school and more verbose.
+// while new Object() is old-school and more verbose
