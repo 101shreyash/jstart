@@ -45,9 +45,9 @@ const regularUser = {
     }
 }
 
-// console.log(regularUser.fullName.userFullName.lastName); // Gautam 
 // console.log(regularUser.lastName); // undefined 
 // console.log(regularUser.fullName.lastName); // undefined 
+// console.log(regularUser.fullName.userFullName.lastName); // Gautam 
 
 
 
@@ -58,20 +58,25 @@ const regularUser = {
 
 
 
-const Obj1 = {1:"a", 2:"b"}
-const Obj2 = {3:"c", 4:"d"}
+// const obj1 = {1:"a", 2:"b"}
+// const obj2 = {3:"c", 4:"d"}
+// const obj3 = {5:"c", 6:"d"}
+// const obj4 = Object.assign(obj1 , obj2, obj3) 
 
-// const Obj3 = {Obj1, Obj2}
-// console.log(Obj3); // { Obj1: { '1': 'a', '2': 'b' }, Obj2: { '3': 'c', '4': 'd' } }
-// Obj3 is not a merged object, it creates a new object 
-// with keys Obj1 and Obj2 that hold those objects as values
-
-
- const obj3 = Object.assign({} ,Obj1 , Obj2)
- console.log(obj3);
- // Object.assign with {} as the first argument creates a new empty object, 
-// then copies Obj1 and Obj2 into it. 
-// Result: obj3 has merged values but Obj1 and Obj2 stay unchanged.
+// console.log(obj1); // { '1': 'a', '2': 'b', '3': 'c', '4': 'd', '5': 'c', '6': 'd' }
+// console.log(obj4); // { '1': 'a', '2': 'b', '3': 'c', '4': 'd', '5': 'c', '6': 'd' }
 
 
- 
+const obj1 = {1:"a", 2:"b"}
+const obj2 = {3:"c", 4:"d"}
+const obj3 = {5:"c", 6:"d"}
+const obj4 = Object.assign({},obj1 , obj2, obj3) 
+
+console.log(obj1); // { '1': 'a', '2': 'b' }
+console.log(obj4); // { '1': 'a', '2': 'b', '3': 'c', '4': 'd', '5': 'c', '6': 'd' }
+// asiigns stuff together 
+
+
+
+
+
