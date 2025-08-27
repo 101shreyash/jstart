@@ -61,20 +61,34 @@ const regularUser = {
 // const obj1 = {1:"a", 2:"b"}
 // const obj2 = {3:"c", 4:"d"}
 // const obj3 = {5:"c", 6:"d"}
-// const obj4 = Object.assign(obj1 , obj2, obj3) 
+// const obj4 = Object.assign({},obj1 , obj2, obj3) 
 
-// console.log(obj1); // { '1': 'a', '2': 'b', '3': 'c', '4': 'd', '5': 'c', '6': 'd' }
-// console.log(obj4); // { '1': 'a', '2': 'b', '3': 'c', '4': 'd', '5': 'c', '6': 'd' }
+// console.log( "object1", obj1); // { '1': 'a', '2': 'b' }
+// console.log("objects2", obj4); // { '1': 'a', '2': 'b', '3': 'c', '4': 'd', '5': 'c', '6': 'd' }
+// merge objects together
+// Works in older environments (pre-ES6)
+//  Verbose compared to spread
 
 
-const obj1 = {1:"a", 2:"b"}
-const obj2 = {3:"c", 4:"d"}
-const obj3 = {5:"c", 6:"d"}
-const obj4 = Object.assign({},obj1 , obj2, obj3) 
 
-console.log(obj1); // { '1': 'a', '2': 'b' }
-console.log(obj4); // { '1': 'a', '2': 'b', '3': 'c', '4': 'd', '5': 'c', '6': 'd' }
-// asiigns stuff together 
+// ######################################################################################################
+
+// const obj1 = {1:"a", 2:"b"}
+// const obj2 = {3:"c", 4:"d"}
+// const obj3 = {5:"c", 6:"d"}
+// const obj4 = {...obj1,...obj2,...obj3}
+// console.log(obj4); 
+
+
+// also merge object together
+//  object4 { '1': 'a', '2': 'b', '3': 'c', '4': 'd', '5': 'c', '6': 'd' }
+//  Spread syntax same as Array method
+//    Clean & modern (ES6+)
+//   Preferred in production (React/Next/etc.)
+//   Shallow copy only (nested objects share reference)
+
+
+
 
 
 
