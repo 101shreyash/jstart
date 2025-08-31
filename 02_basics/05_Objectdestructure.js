@@ -1,21 +1,21 @@
 // ************************Object de-structure & JSON API ***********************
 
  const course = {
-    courseName : "cohort3",
-    coursePrice : 5999,
-    courseInstructor : "Harkirat"
+    courseName : "The Completejs Course 2025",
+    coursePrice : 27000,
+    courseInstructor : "Jonas Schmedtmann."
 
  }
-//  console.log(course.courseInstructor); // Harkirat
+//  console.log(course.courseInstructor); // Jonas Schmedtmann.
 
 // This works fine, it's the normal way of accessing object properties.
 
 
 // const {courseInstructor} = course
-// console.log(courseInstructor ); // Harkirat
+// console.log(courseInstructor ); // Jonas Schmedtmann.
 
 const {courseInstructor, courseName, coursePrice} = course
-console.log(courseInstructor, courseName, coursePrice ); // Harkirat cohort3 5999
+console.log(courseInstructor, courseName, coursePrice ); // Jonas Schmedtmann. The Complete js Course 2025 27000
 
 
 
@@ -28,7 +28,7 @@ console.log(courseInstructor, courseName, coursePrice ); // Harkirat cohort3 599
 
 //  {
 //  "name" : "Shreyash", 
-//  "twitter" : "shreyashtwts"
+//  "twitter" : "shreyashtwts" 
 //  }
 
  // In JSON, all keys must be in double quotes " ".
@@ -44,3 +44,5 @@ console.log(courseInstructor, courseName, coursePrice ); // Harkirat cohort3 599
   {"age": 17},
   {"hobby": "liftingheavyshits"}
 ]
+
+ 
