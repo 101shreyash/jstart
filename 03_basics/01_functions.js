@@ -17,11 +17,27 @@
 // // call (execute) the function
 // sayMyName()
 
-function addTwoNumbers (Number1, Number2){ //parameters
-    console.log(Number1+Number2);  
+// function addTwoNumbers (Number1, Number2){ //parameters
+//     console.log(Number1+Number2);  
+// }
+// addTwoNumbers( ) // NaN // arguements
+// addTwoNumbers(7, 7 ) // 14 
+
+
+
+
+function  sumOfTwoNumbers (Number1  , Number2){
+    // let Output = Number1 + Number2    // wiritng this stuff has two ways one of this is this one
+    // return Output
+
+    return Number1 + Number2 // &Heres the easy way to do so without even allocating the variableSpace
+
+    console.log("Shreyash"); // Any code after return (like  console.log("Shreyash")) won’t execute.
+    //Once return runs, the function stops immediately.
+
 }
-addTwoNumbers( ) // NaN // arguements
-addTwoNumbers(7, 7 ) // 14 
-addTwoNumbers(7, "7" ) // 77 (autoconversion thought the first 7 as a string )
-addTwoNumbers(7, "a" ) // 7a
-addTwoNumbers(7, null ) // 7
+ const Output = sumOfTwoNumbers(4, 5) 
+ console.log( " Results:", Output);  //  Results: 9
+ 
+
+ 
