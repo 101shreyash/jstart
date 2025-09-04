@@ -68,3 +68,26 @@ console.log(userLoggedMessage()); // returns undefined if arguement is empty if 
     // if username is not username then print "Please enter your username this 
     // code is equivalent to writing 
     // if(username===undefined){console.log("Please enter your username ")}
+
+
+    
+// ************************************************AddingItemsIntheShoppingCart********************************
+
+
+function cartsItemsCalculate (...nums){ // rest operator
+//  It says: “yo, grab all the extra arguments passed into this function and pack
+//  them into a single array called nums
+    return nums
+}
+// console.log(cartsItemsCalculate(400 , 500 , 600 , 700 , 900)) // just adds the first one which is 400
+console.log(cartsItemsCalculate(400, 500, 600, 700, 900));
+// returns [ 400, 500, 600, 700, 900 ] Since nums is an array, now  we can loop over it:
+
+
+
+
+function cartsItemsCalculate (val1, val2, ...nums){
+    return nums
+}
+console.log(cartsItemsCalculate(400, 500, 600, 700, 900));
+// output would be  [ 600, 700, 900 ] cause 400 is stored in val1 , 500 in val2 & restofall stuff in nums
