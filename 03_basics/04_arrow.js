@@ -127,3 +127,21 @@ console.log(addtwonum(3,3)) // output 6
 // 5.Classic functions: hoisted → you can call them before they are declared.
 
 
+const obj = {
+    username: "Shreyash",
+    classicFn: function() {
+        console.log(this.username); // ✅ Shreyash
+    },
+    arrowFn: () => {
+        console.log(this.username); // ❌ undefined (takes `this` from surrounding context)
+    }
+}
+
+obj.classicFn();
+obj.arrowFn();
+
+
+//Classic functions = flexible, “dynamic this” → depends on how the function is called.
+// Arrow functions = fixed, “lexical this” → depends on where it was written.
+
+
