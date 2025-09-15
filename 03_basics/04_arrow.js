@@ -72,7 +72,7 @@ console.log(this);
 // }
 
 
-// ********************* ArrowFunction ************ 
+// ***************************St****************************************
 
 // const muscleup = function (){
 //     let username = "Shreyash"
@@ -87,21 +87,23 @@ console.log(this);
 
 // *************** using arrow function ********
 
-//  const muscleup =  () => {   // just remove the keyword function and add arrow in the middle of parenthesis
-//     // and curly braces 
-//     let username = "Shreyash"
-//      console.log(this.username);
-    
-// }
-// muscleup()
 
+// *************arrowfunction*************
 
-
-
-// const addtwonum= (num1,num2) => {
+// function sumoftwonumbers (num1,num2){
 //     return num1 + num2
 // }
-// console.log(addtwonum(3,3)) //output 6
+// console.log(sumoftwonumbers(7,7));  // 14 throough function declaration  or classic function
+// this is also called explicit return , where we were manually writing return keyword 
+
+
+
+// through arrow function 
+
+
+const sumoftwonumbers = (num1,num2)=> (num1+num2)
+console.log(sumoftwonumbers(7,7)); // 14 through arrow function it relatively less verbose and used in react 
+// and high in readibility 
 
 
 // *****************Implicit Return***********
@@ -109,30 +111,19 @@ console.log(this);
 //to write it just remove the curly braces and remove the keyword return thats it 
 
 
-// const addtwonum= (num1,num2) =>  num1 + num2
-
-//or simply
-
 const addtwonum= (num1,num2) =>  (num1 + num2)
-
-
 
 console.log(addtwonum(3,3)) // output 6
 
 
 
-// ******************************************************************************************
 
+//++++++++++++++++++ Some Important notes on Arrow Func & Function declaration +++++++++++++++++++++
 
-// const sumofTwoNums =  (num1,num2) => (num1 + num2)
-// console.log(sumofTwoNums(5,5));   is equivalent to writing this one : 
-
-
-// const sumofTwoNums = function(num1,num2){
-//     num1+num2
-// }
-// console.log(sumofTwoNums(5,5)); // this is also called explicit return
-
-// but we wont be writing these long ass code to do so ; also its really useful for react
+// 1.   Arrow functions are popular in modern JS for clean code, 
+// 2.   callbacks, React components, and functional programming.
+// 3. In arrow function , you can’t call before const is defined or declarred it donot have hoisting
+// 4 . In function declaration or 
+// 5.Classic functions: hoisted → you can call them before they are declared.
 
 
