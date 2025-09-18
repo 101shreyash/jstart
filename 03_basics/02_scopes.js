@@ -32,15 +32,17 @@
 // // var ignores block scope – it doesn’t care about { } blocks like let or const.
 
 
+function one (){
 
-function one (){ // a function declared in the global scope ; aka global varible
-   const username = "Shreyash"
-
-   function two (){ // a function declared inside another function which is called local variable
-      const website = "Youtube"
-      console.log(username); 
-   }
-
+  const username = 'Shreyash'
+  function two (){
+    const website = "Github"
+    console.log(username);
+    
+  }
+  two()
+  // console.log(website); website is not defined 
+  
 }
 one()
 
