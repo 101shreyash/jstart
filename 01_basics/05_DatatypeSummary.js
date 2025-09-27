@@ -1,7 +1,13 @@
 // Primitive
 
 // 7 types 
-// String , Number , Boolean , null , undefined , BigInt
+// String
+//  Boolean
+//  null
+//  Symbol
+//  undefined
+//  BigInt
+//  Number
 
 
 // JavaScript is dynamically typed, not statically typed.
@@ -17,8 +23,10 @@ x = "hello";    // now a string no complaint from JS
 // x = "hello"; //  Compile-time error
 
 
-// #Reference (Non primitive)
-// Array , Object Function
+// #Reference (Non primitive) 3 types
+// Array 
+// Object 
+// Function
 
 
 const Superheros = ["Batman" , "Ironman", "BlackPanther"]
