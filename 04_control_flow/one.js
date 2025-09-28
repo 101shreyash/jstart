@@ -10,7 +10,9 @@ const temperature = 41
 // }
 
 
-/*
+/* Comparision Operator or Relational Operator # 
+
+*****************They are used to compare values and return true or false. ************
 
 <   // less than 
 
@@ -27,9 +29,6 @@ const temperature = 41
  === // strict equality (compares value and type)
  5 === "5" → false
  5 === 5 → true
-
-
-
 
  */
 
