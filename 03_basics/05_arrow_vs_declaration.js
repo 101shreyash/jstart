@@ -26,6 +26,6 @@ surname : 'gautam'
 
 
 
-        // Note : They don’t have their own this.
+        // Note : ArrowFunction  don’t have their own this.
 
 // They borrow this from the surrounding scope (lexical this).
