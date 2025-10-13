@@ -2,9 +2,9 @@
 
 
 (function smtg (){
-    console.log("Database Connected"); // named IFFIE (has name = smtg)
-    
-} ());  // here semicolon is must it shows end of the code this stuff if often not sugg by code editor
+    console.log("Database Connected"); // named IIFE
+})();
+ // here semicolon is must it shows end of the code this stuff if often not sugg by code editor
 
 
 ( () => {
