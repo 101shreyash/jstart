@@ -1,5 +1,22 @@
-// // FOR LOOP
+// ******** First of All  As Usual  Lets talk about block scope a bit
 
+for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    
+}
+
+
+console.log(index); 
+// we could'nt acess index here cause its inside a block Scope 
+// we've alredy talk about this alot so lets move with ForLoop what is it and how would we gonna use it 
+
+
+
+
+
+
+
+// // FOR LOOP
 
  for (let i = 0; i <= 5; i++) {
      const element = i;
