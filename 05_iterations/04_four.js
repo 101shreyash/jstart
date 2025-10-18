@@ -40,3 +40,37 @@ console.log(favBooktillNow[key]);
 // for...in will loop through those too, which can mess up your logic.
 
 // so the better alternative would to use forof in arrays
+
+
+
+
+// **************************************************************
+
+
+
+
+// now the real question is can we use FOR IN Loops in Maps
+
+
+
+const map = new Map ()
+
+map.set ("pullupsCount" , 17)
+map.set ("pushupsCount" , 54)
+map.set ("DipsCount" , 20)
+
+
+for (const key in map) {
+
+console.log(key);
+
+    
+} 
+
+// This doesn't print anything because `for...in` loops over an object's enumerable property names.
+// A Map is NOT a plain object; its keys are stored internally and are not enumerable properties.
+// So `for...in` sees nothing in the Map. 
+// so its not iterable using forIn Loop
+
+
+
