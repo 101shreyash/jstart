@@ -1,3 +1,6 @@
+// FOR IN LOOPS
+
+
 const userinfo = {
     username : 'Shreyash', 
     favBook : "Zero to One By Peter theil ",
@@ -16,7 +19,7 @@ for (const key in userinfo) {
 
 
 
-// **************** Now the Question Can We Use For In Loop For Arraays *************
+// **************** Now the Question is .. Can We Use For In Loop For Arraays *************
 
 const favBooktillNow = ["ZeroToOne" ,"AtomicHabit", "SameAsEver", "YouSquare"]
 
