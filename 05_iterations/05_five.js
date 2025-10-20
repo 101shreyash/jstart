@@ -27,3 +27,15 @@ const thingsidoinmeantime = ["mathsOviously", "VideosOfSamOvens", "podcastofLexF
 
 thingsidoinmeantime.forEach ((thisisparameter) => {console.log(thisisparameter);
 });
+
+
+
+// ****************************************************************
+
+// function printMe(item){
+//     console.log(item);
+// }
+
+// coding.forEach(printMe)
+
+
