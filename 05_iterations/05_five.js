@@ -71,4 +71,7 @@ const programmingLanguage = [
 programmingLanguage.forEach ( (item) => {console.log(item.progFileName);
 } ) 
 
-// thats it , it helps us when the values are called from databases
+// This code loops through an array of programming language objects 
+//  Useful when you get dynamic data from a database or API 
+// and want to perform some action (like displaying it, logging it, or updating UI) 
+// way to iterate over all elements when we don’t need a new array in return.
