@@ -32,10 +32,43 @@ thingsidoinmeantime.forEach ((thisisparameter) => {console.log(thisisparameter);
 
 // ****************************************************************
 
-// function printMe(item){
-//     console.log(item);
-// }
-
-// coding.forEach(printMe)
+// const whatsnext = ["Save10k", "getbetterGrades", "BuyCohort", "6months9hoursgrind", "Workingout365days"]
 
 
+// whatsnext.forEach ((items , index) => {console.log(items,index);
+// })
+
+
+// forEach doesn’t just give you the current item in the array (here called 'items')
+// It can also provide additional info like the 'index' of the item, and even the full array if you want
+// (Optional) you can add a third parameter to get the whole array
+
+
+
+
+// ***********************  Most Common scenario is we used to have an obj inside arrays **************
+// and we need to iterate it 
+
+
+const programmingLanguage = [
+
+    {
+        progLangName : "Javascript",
+        progFileName : "js"
+    },
+
+    {
+        progLangName : "Python",
+        progFileName : "py"
+    },
+
+    {
+        progLangName : "Rust",
+        progFileName : "rs"
+    }
+]
+
+programmingLanguage.forEach ( (item) => {console.log(item.progFileName);
+} ) 
+
+// thats it , it helps us when the values are called from databases
