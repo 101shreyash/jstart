@@ -51,17 +51,21 @@ const newnums = myNums
 
 
 
-const nums9to14 = [9,10,11,12,13,14,15]
+const totalnums = [1,2,3,4,5,6,7]
 
-const afterstuff = nums9to14
 
-      .map ((nums) =>  nums * 10 )
-      .map ((nums) => nums + 1 ) 
-      .filter ((nums) => nums > 100 )
+const aftermath = totalnums
+             .map ((math) => {return math *10})
+             .map ((math) => {return math + 1})
+             .map ((math) => {return math + 3})
+             .filter ((math) => {return math>50})
 
-      console.log(afterstuff); 
 
-      // output would be  [ 101, 111, 121, 131, 141, 151 ]
-      // tldr , each value of array is multiplied by 10 and each value after multipliaction is added by 1 
-      // and there we create a filter saying i need nums greater than 100
-      
+console.log(aftermath);
+
+
+// out put would be 54,64, and 74 
+// first map would do *10 to eaach of the element of array like 1*10 , 2*10 and so on 
+// 2nd map would add 1 to each of those value after output of first one like 10 + 1 , 20 +1
+// 3rd one would add 3 to all those like 11 + 3 , 21+3 
+// and last filter says that i need value greater than 50 so its displays 54,64,74 as an output
