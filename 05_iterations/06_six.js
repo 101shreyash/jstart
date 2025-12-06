@@ -102,7 +102,7 @@ console.log(userBooks);
 
 
 
-//  ************************** AND OPERATOR USE CASE IN REDUCE **********************
+//  ************************** AND OPERATOR USE CASE IN FILTER **********************
 
  const books = [
     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
@@ -121,4 +121,22 @@ console.log(userBooks);
 
 console.log(HistoryBookies); // we could use &&  Inorder to get multiple Values 
 // lets says we were making a webpage for car so we could filter multiple Parameters such as 
-// car colour &&  cartype && CarModel && Carbrand using " AND OPERATOR " 
+// car colour &&  cartype && CarModel && Carbrand using " AND OPERATOR "  
+// example could be this
+
+const Cars = [
+
+
+   {carName: "Tesla Model 3", type: "Sedan", Color: "Red", PriceInUSD: 45000},
+   {carName: "Ford Mustang", type: "Coupe", Color: "Blue", PriceInUSD: 55000},
+   {carName: "Toyota Corolla", type: "Sedan", Color: "White", PriceInUSD: 20000},
+   {carName: "Jeep Wrangler", type: "SUV", Color: "Black", PriceInUSD: 40000},
+   {carName: "Chevrolet Camaro", type: "Coupe", Color: "Yellow", PriceInUSD: 50000},
+   {carName: "Honda Civic", type: "Sedan", Color: "Silver", PriceInUSD: 22000},
+
+];
+
+
+Holds = Cars.filter ((CarIllGet) => {return CarIllGet.PriceInUSD <= 40000 && CarIllGet.Color === "Black" })
+
+console.log(Holds);
