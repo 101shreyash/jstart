@@ -27,8 +27,8 @@
 
 const totalNums = [1,2,3,4,5,6,7,8,9]
 
- const afterMath = totalNums.reduce((acc,cv) => {return acc + cv} , 5)
- console.log(afterMath);
+ const after = totalNums.reduce((acc,cv) => {return acc + cv} , 5)
+ console.log(after);
  
 
 
@@ -47,29 +47,31 @@ const totalNums = [1,2,3,4,5,6,7,8,9]
  // calculating total cost of items in the shopping Cart using Reduce prototype of An Array
 
  
- const BooksIhveGot  = [
+ const section101Books = [
 
-     {ItemName : "CantHurtme" ,  Price : 599},
-     {ItemName : "theGayScience" ,  Price : 799},
-     {ItemName : "WealthOfNation" ,  Price : 699},
-     {ItemName : "NeverFinished" ,  Price : 720},
-     {ItemName : "SameAsEver" ,  Price : 435},
-     {ItemName : "benjaminFranklinBiography" ,  Price : 1699},
-     {ItemName : "ZeroToOne" ,  Price : 599},
-     {ItemName : "SteveJobsBiography" ,  Price : 1299},
-     {ItemName : "NeverFinished" ,  Price : 650},
-     {ItemName : "AnimalFarm" ,  Price : 199},
-     {ItemName : "Alcheimist" ,  Price : 199},
-     {ItemName : "You2" ,  Price : 299},
-     {ItemName : "AtomicHabit" ,  Price : 799},
-     {ItemName : "TheSecreat" ,  Price : 599},
-     {ItemName : "TuesdayWithMorrie" ,  Price : 499},
+    {bookName : "tuesdayWithMorrie" , price : 450},
+    {bookName : "SameAsEver" , price : 400},
+    {bookName : "AtomicHabit" , price : 700},
+    {bookName : "AnimalFarm" , price : 250},
+    {bookName : "CantHurtMe" , price : 700},
+    {bookName : "NeverFinished" , price : 700},
+    {bookName : "you2" , price : 250},
+    {bookName : "Sapiens" , price : 500},
 
 
- ]
+]
+
+const afterMath = section101Books.reduce((acc , cv) => {return acc + cv.price} , 0 )
+console.log(afterMath);
 
 
- const TotalPrice = BooksIhveGot.reduce ((accumulator , items) => accumulator + items.Price , 0)
+// acc - 0 + 450 - acc - 450
+// acc - 450 + 400 acc - 850
+// acc - 850 + 700 -  acc 1550
+// acc - 1550 + 250 - acc 1800
+// acc - 1800 + 700 - acc 2500
+// acc - 2500 + 700 - acc 3200
+// acc - 3200 + 250 - acc - 3450
+// acc - 3450 + 500 - acc - 3950
 
- console.log(TotalPrice); // total price : 10093
- 
+// total Price of these book Would be 39550
