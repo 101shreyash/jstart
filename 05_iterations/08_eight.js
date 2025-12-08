@@ -20,6 +20,27 @@
 // // acc - 21 // current value ;
  
  
+// +++++++++++++++++++++++ OR To UnderStand It Even More We Can Learn In this way ++++++++++++++
+
+
+
+
+const totalNums = [1,2,3,4,5,6,7,8,9]
+
+ const afterMath = totalNums.reduce((acc,cv) => {return acc + cv} , 5)
+ console.log(afterMath);
+ 
+
+
+ // acc 5 + 1 = 6 acc
+ // acc 6 + 2 = 8 acc
+ // acc 8 + 3 = 11 acc
+ // acc 11 + 4 = 15 acc
+ // acc 15 + 5 = 20 acc
+ // acc 20 + 6 = 26 acc
+ // acc 26 + 7 = 33 acc
+ // acc 33 + 8 = 41 acc 
+ // acc 41 + 9 = 50 acc 
  
 //  *************************************************************************************************
  
