@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New element Using Dom </title>
+    <style>
+
+        *{
+            background-color: #414141;
+        }
+        .h1-style{
+            background-color: orange;
+            color: #ffff;
+        }
+        .para-style{
+            color: orange ;
+            font-size: 22px;
+        }
+
+    </style>
+</head>
+<body>
+</body>
+<script>
+    const f1Heading = document.createElement("h1")
+    f1Heading.textContent = "Document Object Model"
+    f1Heading.id = "Main-heading"
+    f1Heading.className = "h1-style"
+    document.body.append(f1Heading);
+
+    console.log(f1Heading);
+
+
+    const newdiv = document.createElement("div")
+    newdiv.id = "random-text"
+    newdiv.className = "para-style"
+    newdiv.textContent = "Here today We Are Going to learn about What dom is And How We can Create new Element using document Object Model and create Element In Dom"
+
+    document.body.append(newdiv)
+    console.log(newdiv);
+    
+    
+    
+</script>
+</html>
