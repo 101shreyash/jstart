@@ -1,47 +1,103 @@
 
+
+ <!-- Document Object Model -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New element Using Dom </title>
+    <title> Dom ManiPulation And Event Handling In Js </title>
     <style>
+      *{
+        background-color: #212121;
+        color: white;
+      }
+      .for-Styling{
+        background-color: skyblue;
+        color: #212121;
+      }
+      .Main-div{
 
-        *{
-            background-color: #414141;
-        }
-        .h1-style{
-            background-color: orange;
-            color: #ffff;
-        }
-        .para-style{
-            color: orange ;
-            font-size: 22px;
-        }
-
+        color: orange;
+        font-size: 22px;
+      }
+      .main-heading-style{
+        color: orange;
+      }
     </style>
 </head>
 <body>
+    
+<div class="bg-black">
+    <h1 class="heading" , id="title"> Dom Learning </h1>
+
+    <h2>Lorem ipsum dolor sit.1</h2>
+    <h2>Lorem ipsum dolor sit.2</h2>
+    <h2>Lorem ipsum dolor sit.3</h2>
+    <h2>Lorem ipsum dolor sit.4</h2>
+
+    <ul>
+      
+      <li class="listItem"> one</li>
+      <li class="listItem"> two</li>
+      <li class="listItem"> three</li>
+      <li class="listItem"> Four</li>
+
+    </ul>
+
+</div>
+
 </body>
+
 <script>
-    const f1Heading = document.createElement("h1")
-    f1Heading.textContent = "Document Object Model"
-    f1Heading.id = "Main-heading"
-    f1Heading.className = "h1-style"
-    document.body.append(f1Heading);
 
-    console.log(f1Heading);
+    const mainHeading = document.getElementById("title")
+    mainHeading.textContent = "Dom Learning Course"
+    mainHeading.className = "main-heading-style"
 
 
-    const newdiv = document.createElement("div")
-    newdiv.id = "random-text"
-    newdiv.className = "para-style"
-    newdiv.textContent = "Here today We Are Going to learn about What dom is And How We can Create new Element using document Object Model and create Element In Dom"
 
-    document.body.append(newdiv)
-    console.log(newdiv);
-    
-    
-    
+   const allH2 =  document.querySelectorAll("h2")
+
+   const arrayForH2 = Array.from(allH2)
+
+
+   arrayForH2[1].textContent = "Document Object Model"
+   arrayForH2[2].textContent = "Document Object Manipulation"
+   arrayForH2[3].textContent = "Document Object Model Traversing And Further More"
+   console.log(arrayForH2);
+   
+   
+
+
+   const veryFirstH2 = document.querySelector("h2")
+   veryFirstH2.textContent = "*** Course Content ****"
+   veryFirstH2.className = "for-Styling"
+   
+   
+   const allLists = document.querySelectorAll("li")
+   
+   const intoArray = Array.from(allLists)
+
+   
+   intoArray[0].textContent = "Document Object Model"
+   intoArray[1].textContent = "Document Object Manipulation"
+   intoArray[2].textContent = "Document Object Model Traversing"
+   intoArray[3].textContent = "Creating New Elements And Deleting In Dom" 
+
+   console.log(intoArray);
+   
+   
+   
+   const mainDiv = document.createElement ("div")
+
+   mainDiv.textContent = "This is What We Are Going To Learn In This Course Of Dom Manipulation"
+   mainDiv.id = "414141"
+   mainDiv.className = "Main-div"
+   
+   
+   document.body.append(mainDiv)
+   
+   console.log(mainDiv);
 </script>
 </html>
