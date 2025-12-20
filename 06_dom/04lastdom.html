@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EditingInDom</title>
+    <style>
+        *{
+            background-color: #212121;
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul class="Language">
+    <li> JavaScript</li>
+    </ul>
+
+
+
+</body>
+<script>
+
+    // Adding New List In Unordered List 
+
+   const ul = document.querySelector(".Language")
+
+   function addingLanguage(languages) {
+
+   const li =  document.createElement("li");
+   li.textContent = languages;
+    ul.append(li)
+   }
+   addingLanguage("Python")
+   addingLanguage("Rust")
+   addingLanguage("typescript")
+
+   //**************  Ediit 1 *************** !!
+
+ const secondlang = document.querySelector("li:nth-child(2)")
+//  secondlang.textContent = "Ruby" 
+// this stuff works but is not cool way to do so 
+
+
+const newli = document.createElement("li")
+newli.textContent = "Ruby"
+secondlang.replaceWith(newli)
+// this is bit of real code and optimized too
+
+
+// *************** Edit 2 **************
+
+const firstLang = document.querySelector ("li:first-child")
+
+const firstli = document.createElement("li")
+firstli.textContent = "C"
+firstLang.replaceWith(firstli)
+
+
+// remove Stuff ; lets say we are removing typescript which is the last list item or element
+
+const lastElement = document.querySelector("li:last-child")
+lastElement.remove()
+
+
+// removing Ruby 
+
+const secondElement = document.querySelector("li:nth-child(2)")
+secondElement.remove()
+
+
+</script>
+</html>
