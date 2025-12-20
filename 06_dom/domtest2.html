@@ -1,0 +1,58 @@
+<!-- Basics Stuff Editing , Creating , Removing Values In Dom  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EditingInDom</title>
+    <style>
+        *{
+            background-color: #212121;
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul class="Language">
+    <li> JavaScript</li>
+    </ul>
+
+
+
+</body>
+<script>
+
+    // Adding New List In Unordered List 
+
+   const ul = document.querySelector(".Language")
+
+   function addingLanguage(languages) {
+
+   const li =  document.createElement("li");
+   li.textContent = languages;
+    ul.append(li)
+   }
+   addingLanguage("Python")
+   addingLanguage("Rust")
+   addingLanguage("typescript")
+
+   //**************  Ediiting Values In Dom *************** !!
+
+   const secondChild = document.querySelector("li:nth-child(2)")
+
+    const newLang = document.createElement("li")
+    newLang.textContent = "Ruby"
+    secondChild.replaceWith(newLang)
+
+
+    // Removing 3rd Value in the List 
+
+    const thrdVal = document.querySelector("li:nth-child(3)")
+    thrdVal.remove()
+ 
+</script>
+</html>
