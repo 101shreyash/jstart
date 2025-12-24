@@ -1,0 +1,51 @@
+<!-- this is the super cool live clock example that shows the current time 
+ and updates every second -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Clock</title>
+    <style>
+        body {
+            background-color: ghostwhite;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: skyblue;
+        }
+
+        h1#text {
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        #clock {
+            background-color: skyblue;
+            color: black;
+            font-size: 60px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="text">My Time</h1>
+    <div id="clock"></div>
+</body>
+<script>
+
+    setInterval(function(){
+            const time = new Date ().toLocaleTimeString()
+            const clock = document.getElementById("clock")
+            clock.textContent = time
+
+
+    },1000)
+
+</script>
+</html>
