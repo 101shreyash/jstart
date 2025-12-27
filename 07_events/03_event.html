@@ -21,17 +21,40 @@
 <script>
 
     // remove the images using Event target and parent Node
-    
-document.getElementById("images").addEventListener("click" , function (e) {
-
-console.log(e.target.parentNode);
-
-let remove = e.target.parentNode
-remove.remove()
 
     
+// document.getElementById("images").addEventListener("click" , function (e) {
+
+// console.log(e.target.parentNode);
+
+// let remove = e.target.parentNode
+// remove.remove()
+
     
+    
+// })
+
+// but this stuff has a problem when you click outside of the image like li bullets 
+// the parent node of li is ul ; so it will delete the whole ul 
+    
+
+// ********************* Better option  will be Using tagName *****************
+
+document.getElementById("images").addEventListener("click" , function (e){
+
+
+console.log( e.target.tagName); // the Tag name of ul is UL and the tagname of images is IMG , 
+// so now we will use Condition Here 
+
+
+if (e.target.tagName === "IMG") {
+
+let removeIt = e.target.parentNode
+removeIt.remove()
+
+    
+}
+
 })
-
 </script>
 </html>
