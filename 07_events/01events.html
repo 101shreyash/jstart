@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input  id = "button" type="submit" value="Clickme" onclick="alert('clicked')">
+    
+    <!-- writing onclick in inline way is a badpractice  -->
+</body>
+<script>
+
+
+    // document.getElementById("button").addEventListener("click", function(){
+    //     alert("Clciked the button")
+    // })
+
+
+
+// Why addEventListener is superior:
+//
+//  Keeps HTML and JavaScript separate (clean, scalable code)
+//  Allows multiple event handlers on the same element
+//  Gives full control over the event (preventDefault, stopPropagation, etc.)
+//  Inline onclick mixes structure + behavior (bad habit)
+
+
+
+</script>
+</html>
