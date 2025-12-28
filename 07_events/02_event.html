@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>htnml Events </title>
+    <title> Events </title>
 </head>
 <body style="background-color: #414141; color: aliceblue;">
     <h2>Amazing image</h2>
@@ -19,7 +20,8 @@
 </body>
 <script>
     
-    // Event Bubling in Js 
+// ******************* Event Bubbling In Js **********************
+
 
 // false = bubbling phase (default)
 // the output here will be owl clicked and then the ul clciked when clicked on the owl img
@@ -40,22 +42,46 @@
     // } , false)
 
 
-// Event Capturing In Js 
+    // ************************ Event Capturing in Js *******************
+
+
 // Runs parent first, then child
 // clciked on the ul , and then owl clicked when clicked on the owl img
 
 
 
-document.getElementById("images").addEventListener("click" , function () {
+// document.getElementById("images").addEventListener("click" , function () {
 
-        alert ("clicked on the ul")
-    } , true)
+//         alert ("clicked on the ul")
+//     } , true)
 
-    document.getElementById("owl").addEventListener("click" , function(){
+//     document.getElementById("owl").addEventListener("click" , function(){
 
-        alert("owl Clicked")
+//         alert("owl Clicked")
 
-    } , true)
+//     } , true)
+
+// ------------------------------- Prevent Default -----------------------------------------
+
+
+document.getElementById("google").addEventListener("click" , function(e){
+
+    e.preventDefault()
+
+})
+
+// Prevent Defaults stops the browser’s default behavior for that event.
+
+//   What would happen WITHOUT it
+//   click Google
+//   Browser instantly:
+//   Navigates to https://google.com
+
+
+// What happens WITH preventDefault()
+// You click Google
+// Browser:
+//  does NOT navigate
 
 </script>
 </html>
