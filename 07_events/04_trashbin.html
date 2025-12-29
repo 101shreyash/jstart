@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery TrashBin</title>
+    <style>
+      body {
+        background-color: #414141;
+        margin: 0;
+      }
+      h1 {
+        margin-top: 20px;
+        margin-left: 20px;
+        color: olivedrab;
+      }
+      #Gallery {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 20px;
+      }
+      .item {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Trash Bin</h1>
+
+    <div id="Gallery">
+      <div class="item">
+        <img
+          src="https://images.unsplash.com/photo-1545560928-ba5443271555?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="img"
+          width="200px"
+        />
+        <button id="first" type="submit">DeleteForever</button>
+      </div>
+
+      <div class="item">
+        <img
+          src="https://images.unsplash.com/photo-1727467772189-4f30d93c6e8d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="img"
+          width="200px"
+        />
+
+        <button id="second" type="submit">DeleteForever</button>
+      </div>
+
+      <div class="item">
+        <img
+          src="https://images.unsplash.com/photo-1685185064099-37f1245cb6f0?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="img"
+          width="200px"
+        />
+
+        <button id="third" type="submit">DeleteForever</button>
+      </div>
+
+      <div class="item">
+        <img
+          src="https://images.unsplash.com/photo-1554907984-15263bfd63bd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="img"
+          width="200px"
+        />
+
+        <button id="fouth" type="submit">DeleteForever</button>
+      </div>
+
+      <div class="item">
+        <img
+          src="https://images.unsplash.com/photo-1556230491-853cfb1bf050?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="img"
+          width="200px"
+        />
+
+        <button id="fifth" type="submit" class="btn">DeleteForever</button>
+      </div>
+
+      <div class="item">
+        <img
+          src="https://images.unsplash.com/photo-1736184722068-4ba95d732e4b?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="img"
+          width="200px"/>
+
+        <button id="sixth" type="submit" class="btn">DeleteForever</button>
+      </div>
+    </div>
+  </body>
+
+  <script>
+
+document.getElementById("Gallery").addEventListener("click" , function(e){
+
+if (e.target.tagName === "BUTTON") {
+  
+  const conformMsg = confirm("Do You Sure Want To Delete this Image Forever")
+
+
+
+
+
+
+if(e.target.tagName === "BUTTON" && conformMsg === true ){
+
+
+  const images = e.target.parentNode;
+  images.remove()
+
+
+}  
+}  
+
+
+
+},false)
+
+  </script>
+</html>
