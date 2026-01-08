@@ -64,3 +64,21 @@ let score2 = 200
 let score3 = 300
 
 console.log(Array.of(score1, score2, score3)); // [ 100, 200, 300 ]
+
+
+// ********************* Just In Case ****************
+
+
+
+const name = "shreyash"
+const surname = "Gautam"
+const location = "BiratNagar"
+const maxPullups = "24 with 10kg Added"
+
+ const profile = [name , surname , location , maxPullups]
+
+console.log(profile);
+
+
+
+// Output: [ 'shreyash', 'Gautam', 'BiratNagar', '24 with 10kg Added' ]
