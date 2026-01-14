@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnClickInfo</title>
+    <style>
+        body {
+            background-color: #414141;
+            margin-top: 80px;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        div {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #5a5a5a;
+            color: white;
+            border: 1px solid #666;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #6a6a6a;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div>
+            <button id="time">Show Time</button>
+        </div> 
+
+        <div>
+            <button id="date">Show Date</button>
+        </div> 
+
+        <div>
+            <button id="year">Show Year</button>
+        </div> 
+
+        <div>
+            <button id="location">Show Location</button>
+        </div> 
+    </div>
+</body>
+</html>
+<script>
+    document.getElementById("time").addEventListener("click" , function(e){
+
+      if (e.target.tagName === "BUTTON") {
+
+        setInterval(() =>{
+
+            const timenow = new Date().toLocaleTimeString()
+            const addhere = document.getElementById("time")
+            addhere.textContent = timenow
+   
+             
+
+        },1000)
+        
+      }    
+
+    })
+
+
+    document.getElementById("date").addEventListener("click" , function(e){
+
+
+         if (e.target.tagName === "BUTTON") {
+
+            const addhere = document.getElementById("date")
+          const datenow = new Date().toLocaleDateString()
+          addhere.textContent = datenow
+            
+         }
+
+    })
+    
+
+    document.getElementById("year").addEventListener("click" , function(e){
+
+
+        if (e.target.tagName === "BUTTON") {
+
+            const yearnow = new Date().getFullYear()
+            const assignining = document.getElementById("year")
+            assignining.textContent = yearnow
+            
+        }
+
+    })
+
+
+    document.getElementById("location").addEventListener("click" , function (e) {
+
+        if ( e.target.tagName === "BUTTON") {
+
+            const locanow = document.getElementById("location")
+            const currentLoca = "Biratnagar"
+            locanow.textContent = currentLoca
+            
+        }
+        
+
+    })
+    
+    
+    
+    
+</script>    
+</html>
