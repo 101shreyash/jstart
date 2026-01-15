@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background color Chnager</title>
+</head>
+<style>
+    h1{
+        color: navy;
+        text-align: center;
+    }
+    #Rangers {
+    text-align: center;
+    margin-top: 50px; 
+}
+#Rangers button {
+    margin: 10px; 
+    padding: 10px 20px; 
+    /* cursor: pointer; */
+}
+button:hover{
+    background-color: navy;
+    color: white;
+}
+</style>
+<body>
+    <div id="Rangers">
+     <h1>Choose Your Favourite Power Ranger</h1>
+    <button id="black">BlackRanger</button>
+    <button id="skyblue">BlueRanger</button>
+    <button id="yellow">YellowRanger</button>
+    <button id="red">RedRanger</button>
+    <button id="hotpink">PinkRanger</button>
+    </div>
+</body>
+<script>
+    document.getElementById("black").addEventListener("click" , function(e){
+
+        if (e.target.tagName === "BUTTON" ) {
+
+         const confirmMsg = confirm("Are You Sure want to Choose Black Ranger ?");
+         if(confirmMsg === true){
+
+        const body =  document.body.style.backgroundColor = "black"
+
+
+         }   
+
+           
+            
+        }
+
+    });
+
+    document.getElementById("skyblue").addEventListener("click" , function(e){
+
+        if (e.target.tagName === "BUTTON" ) {
+
+     const confirmMsg = confirm("Are You Sure want to Choose Blue Ranger ?");
+         if(confirmMsg === true){
+
+        const body =  document.body.style.backgroundColor = "skyblue"
+
+
+         }              
+            
+        }
+
+
+    })
+    document.getElementById("red").addEventListener("click" , function(e){
+
+        if (e.target.tagName === "BUTTON" ) {
+
+     const confirmMsg = confirm("Are You Sure want to Choose Red Ranger ?");
+         if(confirmMsg === true){
+
+        const body =  document.body.style.backgroundColor = "red"
+
+
+         }              
+            
+        }
+
+    })
+    document.getElementById("yellow").addEventListener("click" , function(e){
+
+         if (e.target.tagName === "BUTTON" ) {
+
+     const confirmMsg = confirm("Are You Sure want to Choose Yellow Ranger ?");
+         if(confirmMsg === true){
+
+        const body =  document.body.style.backgroundColor = "yellow"
+
+
+         }              
+            
+        }
+
+    })
+
+    document.getElementById("hotpink").addEventListener("click" , function(e){
+
+         if (e.target.tagName === "BUTTON" ) {
+
+     const confirmMsg = confirm("Are You Sure want to Choose This Gay Color Ranger ?");
+         if(confirmMsg === true){
+
+        const body =  document.body.style.backgroundColor = "hotpink"
+
+
+         }              
+            
+        }
+
+
+    })
+</script>
+</html>
