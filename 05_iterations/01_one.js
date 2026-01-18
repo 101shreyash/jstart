@@ -1,4 +1,4 @@
-// ******** First of all Lets recap about block scope a bit
+// ******** First of all Lets recap block scope a bit
 
 for (let index = 0; index < array.length; index++) {
     const element = array[index];
