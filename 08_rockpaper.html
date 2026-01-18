@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissors</title>
+    <style>
+        
+        div{
+            text-align: center;
+            margin-top: 10%;
+            
+        }
+        p{
+            color:  gold;
+            font-size: 28px;
+        }
+        body{
+               background-color: #414141;
+               text-align: center;
+        }
+        h1 , h2{
+            color: gold;
+        }
+        button{
+            height: 60px;
+            background-color: gold;
+            font-size: 20px;
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+    <h1>Rock Paper Scissors</h1>
+    <h2>Opponent  : Rock </h2>
+    <button> Shoooot !!</button>
+    </div>
+</body>
+<script>
+
+    // Here The opponent is always "Rock," and the result is always "Scissor." No actual game logic,
+    // The Value of Opponent is HardCoded So Does the player too
+   // was just checking the diff btwn SetTimeout and SetInterval
+ 
+ const whatwegot = document.querySelector("button")
+ whatwegot.addEventListener("click" , function(e){
+
+
+     move = whatwegot.textContent = "ShakingHands..."
+     
+     if (move === "ShakingHands...") {
+    
+        const oldEle = document.createElement("p")
+        oldEle.textContent = "Analyzing Hand Movements....."
+        document.body.append(oldEle)
+
+        
+        setTimeout(()=>{
+
+
+        const newEle = document.createElement("p")
+        newEle.textContent = "Hahaha, you lost! You got Scissors...."
+        document.body.append(newEle)
+
+        if (newEle) {
+            
+            oldEle.remove()
+            whatwegot.textContent = " Try Again Loser !"
+
+            
+        }
+
+               
+        },2000)
+
+    }
+ })
+
+ 
+</script>
+</html>
