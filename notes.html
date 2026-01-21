@@ -30,12 +30,21 @@
 <body>
 
     <h1>NotesToSelf</h1>
+
+    <h2> </h2>
     <div id="notes">
+
+
+
+
+
+        <button id="woo"> Pause</button>
+    <h3> Andd....</h3>
 
 
         <div>
 
-            <p>Mother Fucker the Purpose Is You And We Forget That </p>
+            <p> Work Toward Being Uncommon Against Uncommon Defy The Odds </p>
             <button id="DeleteN1"> Delete </button>
 
         </div>
@@ -174,6 +183,22 @@ document.getElementById("DeleteN7").addEventListener("click" , function(e){
 }    
 
  });
+
+ let rn = setInterval(()=>{
+
+    const timern = new Date ().toLocaleTimeString()
+    document.querySelector("h2").textContent = ` Firstly, time is always ticking. ${timern} And You Can't Pause it Like you do in videoGame Like this ` 
+    document.getElementById("woo").addEventListener("click" , function(){
+
+        clearInterval(rn)
+
+    })
+
+
+ },1000)
+
+
+
 
 </script>
 
