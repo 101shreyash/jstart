@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Her Love For You</title>
+  <style>
+    body{
+      background-color: #414144;
+      color: yellow;
+    }
+    #typehere{
+      height: 60px;
+      width: 400px;
+    }
+    button{
+      height: 100px;
+      width: 800px;
+    }
+    button:hover{
+      background-color: yellow;
+    }
+     
+  </style>
+
+</head>
+<body>
+
+  
+  <button id="start">Spin The Mfking PushupNumbers</button>
+  <button id="stop">Stop It</button>
+</body>
+
+<script>
+
+
+setTimeout(() => {
+
+  const heymsg = document.createElement("h1") 
+  heymsg.textContent = "HEYYYYY??"
+  document.body.append(heymsg)
+  
+}, 1000);
+
+
+
+   setTimeout(()=>{
+    
+
+const fpara = document.createElement("h1")
+fpara.textContent = "Heard of Nickles And Dimes Workout , 2 Set Methods , Mike Mentzer Heavy Dutyyy , The Deck of Card ? But Guess what fuck all those lets get ripped while  being on Screen"
+
+document.body.append(fpara)
+
+   },2000)
+
+   setTimeout(() => {
+
+    const spara = document.createElement("h1")
+    spara.textContent = "The Goal Is Simple Youll Do As Many Pushups Shown In Your Screen When You Click Spin the Numbers And Hit Stop ;  Also You Have to  click this random button Every Mfking Hours"
+    document.body.append(spara)
+
+    
+   }, 5000);
+
+
+
+   let percentagewillbe ;
+
+   document.getElementById("start").addEventListener("click" , function(){
+
+     percentagewillbe = setInterval(()=>{
+     
+     
+       const rnd = Math.floor((Math.random()*40)+1)
+      document.getElementById("start").textContent = ` Just Do  ${rnd} of Them`     
+     
+     },50)
+
+
+   })
+
+   document.getElementById("stop").addEventListener("click" , function(){
+
+
+    clearInterval(percentagewillbe)
+   })
+
+
+</script>
+</html>
