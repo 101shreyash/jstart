@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DogType</title>
+  <style>
+    body{
+      background-color: #414141;
+      color: yellow;
+    }
+    p{
+      font-size: 30px;
+    }
+    
+    #displayHere{
+      height: 100px;
+      width: 100%;
+      background-color: #434343;
+      border: none;
+      color: yellow;
+      font-size: 25px;
+      text-align: left;
+    }
+
+    #strt{
+      background-color: red;
+      width: 60px;
+      border: none;
+      font-size: 20px;
+      color: white;
+      height: 40px;
+    }
+    #greytext{
+
+      color: silver;
+      
+    }
+  </style>
+</head>
+<body>
+
+<h1>Lets name this dog type</h1>
+<p>Type as fast as possible and we donot have acess to backspace so one mistake game over ; you have to refresh it and retype it </p>
+<p> This game trains memory too , you have to remeber at what time you started typing </p>
+<p id="stratedAt"></p>
+<p id="clock"></p>  
+<button id="strt">Start</button>
+
+<p id="greytext"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magnam fugit quaerat vel perferendis, saepe architecto voluptate similique necessitatibus qui perspiciatis, molestiae sequi quasi et porro tempora alias, voluptates animi?</p>
+
+ <input type="button" value="" id="displayHere"> 
+
+</body>
+<script>
+
+
+
+const defaultval = document.getElementById("displayHere").value
+
+
+  window.addEventListener("keydown", function(e){
+
+
+
+    
+  if (e.key.length === 1) {
+
+  document.getElementById("displayHere").value += e.key;
+
+
+    }      
+   
+   
+  })
+  
+ 
+  document.getElementById("clock").textContent = "click Start And Start Typing Words Below Immidietly and remember your time too"
+  document.getElementById("strt").addEventListener("click" , function(){
+
+
+    setInterval(() => {
+
+      const runningtime = new Date ().toLocaleTimeString()
+      document.getElementById("clock").textContent = `time Going on ${runningtime}`
+
+      
+    }, 1000);
+
+  })
+      
+  
+</script>
+</html>
