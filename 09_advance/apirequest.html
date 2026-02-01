@@ -48,7 +48,13 @@
     xhr.onreadystatechange = function(){
 
 
-        if (xhr.readyState === 4 && xhr.status === 200) {
+        if (xhr.readyState === 4 && xhr.status === 200) { 
+            // status 200 means ok the value received
+            //redy state 4 means the operation is complete
+            // 3 means loading
+            // 2 means headers received
+            // 1means opened
+            // 0 means unsent
 
             const data = JSON.parse(this.responseText)
             // aftermath
@@ -66,7 +72,7 @@
 
         const date = new Date ().toLocaleDateString()
 
-   const peopledied = ["7/7/2024"  , "he/she is Immortal" , "2/1/2026" ,  "7/5/2020" , "2/1/2029 yes ik " , "2/1/2026" , "soon" , "9/1/2022" , "2/1/2021"]
+     const peopledied = ["7/7/2024"  , "he/she is Immortal" , "2/1/2026" ,  "7/5/2020" , "2/1/2029 yes ik " , "2/1/2026" , "soon" , "9/1/2022" , "2/1/2021"]
 
    const at = Math.floor(Math.random()*peopledied.length);
    document.querySelector("h2").textContent = ` Death = ${peopledied[at]}`
