@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XHR</title>
+    <title>SomeoftheGreatFolks</title>
     <style>
+        div{
+            height: 200px;
+            width: 200px;
+            margin-left: 45%;
+            background-color: yellow;
+        }
         body{
             background-color: #414141;
+            color: yellow;
+            text-align: center;
         }
+        
     </style>
 </head>
-<body>    
+<body>
+
+    <h1> Some of The Great Folks I Look upto And Yeah Rest In Peace Brothers </h1>
+    <h2></h2>
+    <!-- <div>
+
+    </div> -->
+    
 </body>
 <script>
 
@@ -22,26 +38,45 @@
 // 4	DONE	The operation is complete.
 
 
-const requestfrom = "https://randomuser.me/api/"
 
-const xhr = new XMLHttpRequest()
-xhr.open('GET' , requestfrom)
 
-xhr.onreadystatechange = function(){
- 
-    if (xhr.readyState === 4 && xhr.status === 200) {
+//  see the newfaces  every time you  refresh
+    const requestfrom = "https://randomuser.me/api/"
 
-         const data = JSON.parse(xhr.responseText)  
-       let imageofrandomUser = data.results[0].picture.large;
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET' , requestfrom)
+    xhr.onreadystatechange = function(){
 
-       console.log(data.results[0].phone); // random phoneNumber
-       console.log(imageofrandomUser);     // random Image of People  
 
-                          
+        if (xhr.readyState === 4 && xhr.status === 200) {
+
+            const data = JSON.parse(this.responseText)
+            // aftermath
+            const rndFirst =  data.results[0].name.first;
+            const  rndUserEmail = data.results[0].email;
+            const rndimages = data.results[0].picture.large; 
+            
+            
+            const img = new Image()
+            img.src = rndimages
+
+        document.body.append(img)
+
+
+
+        const date = new Date ().toLocaleDateString()
+
+   const peopledied = ["7/7/2024"  , "he/she is Immortal" , "2/1/2026" ,  "7/5/2020" , "2/1/2029 yes ik " , "2/1/2026" , "soon" , "9/1/2022" , "2/1/2021"]
+
+   const at = Math.floor(Math.random()*peopledied.length);
+   document.querySelector("h2").textContent = ` Death = ${peopledied[at]}`
+          
+                             
+        
     }
-    
 }
-xhr.send()
+    xhr.send()
+    
 
 </script>
 </html>
