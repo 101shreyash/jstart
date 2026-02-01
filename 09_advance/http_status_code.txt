@@ -1,0 +1,28 @@
+
+
+
+*************  This covers the ones you’ll see most when working with APIs or websites ****************
+
+100 Continue
+101 Switching Protocols
+102 Processing
+2xx – Success
+200 OK → request succeeded
+201 Created → new resource created
+202 Accepted → request accepted but not yet processed
+3xx – Redirection
+301 Moved Permanently → resource moved
+302 Found → temporary redirect
+304 Not Modified → cached version can be used
+4xx – Client Errors
+400 Bad Request → invalid request
+401 Unauthorized → needs authentication
+403 Forbidden → server refuses request
+404 Not Found → resource doesn’t exist
+408 Request Timeout → server timed out
+5xx – Server Errors
+500 Internal Server Error → generic server error
+501 Not Implemented → server doesn’t support request
+502 Bad Gateway → server received invalid response
+503 Service Unavailable → server overloaded or down
+504 Gateway Timeout → server took too long
