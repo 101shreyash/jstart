@@ -1,0 +1,13 @@
+console.log is not part of the JavaScript language .
+It’s provided by the host environment in most cases, browsers or Node.js which use engines like V8 
+ (Chrome, Node.js). V8 itself is written in C++ and interprets or compiles JavaScript to machine code.
+console.log is an API that the engine exposes to let you output data to the console;
+ it’s essentially a bridge between JS and the environment’s I/O. 
+ The JS engine doesn’t define it; it only executes it when the host provides it.
+
+The “default behavior” of JavaScript is defined by the ECMAScript specification. 
+That includes things like:
+ variables, functions, objects, arrays, control flow, arithmetic, comparison operators, exceptions, promises, and standard built-in objects like Math, Date, JSON, String, Number, Array. These exist regardless of environment.
+Anything like console, document, window, fetch is host-provided, not native JS.
+
+So console.log("hello") calls the log function defined by the environment, which internally might call C++ code in V8 to write text to stdout or the browser console. But the actual JS language itself doesn’t define any console object.
