@@ -10,4 +10,19 @@ That includes things like:
  variables, functions, objects, arrays, control flow, arithmetic, comparison operators, exceptions, promises, and standard built-in objects like Math, Date, JSON, String, Number, Array. These exist regardless of environment.
 Anything like console, document, window, fetch is host-provided, not native JS.
 
-So console.log("hello") calls the log function defined by the environment, which internally might call C++ code in V8 to write text to stdout or the browser console. But the actual JS language itself doesn’t define any console object.
+one liner would be : V8 powers the JavaScript execution inside the browser, and the browser acts as the host environment that provides APIs like console.log and its not the default behaviour of js 
+
+DOM, BOM, Web Storage, Fetch, Web Workers, Timers (setTimeout, setInterval), Console, Canvas, WebSockets, Geolocation.
+All of those are host-provided APIs, not part of the JavaScript language itself
+
+Note : Promises and async/await is the default part of the js and are part of ecma script specification
+
+
+
+********************************************************************************************************
+
+ECMAScript is the language specification that defines JavaScript.
+
+It is a standard published by ECMA International. It describes the syntax, semantics, and core features of the language: types, variables, functions, objects, promises, modules, etc.
+
+JavaScript is an implementation of the ECMAScript specification. Browsers and Node.js implement ECMAScript using engines like V8, SpiderMonkey, or JavaScriptCore, and then add host-specific APIs on top.
