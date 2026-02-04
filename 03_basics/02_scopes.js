@@ -49,9 +49,9 @@ one()
 
 // So the rules here:
 
-// Inner functions can access outer function variables. ✅
-// Outer functions cannot access inner function variables. ❌
-// Global variables are like candy in a public jar everyone can see. 🍬
+// Inner functions can access outer function variables. 
+// Outer functions cannot access inner function variables. 
+// Global variables are like candy in a public jar everyone can see. 
 
 
 // tldr; when nested function is made parent couldnt acess childs property but a child could acess parents
