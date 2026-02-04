@@ -12,7 +12,7 @@
 
 const tinderUser = new Object() 
 
-tinderUser.name = "Omshresth"
+tinderUser.name = "Omshrestha"
 tinderUser.age = 17
 tinderUser.bio = "if she can say a b c she is redy for the d "
 tinderUser.height = "5foot9"
@@ -36,7 +36,7 @@ bio: 'if she can say a b c she is redy for the d ',
 
 const regularUser = {
 
-    email : "user@gmail.com",
+    email : "shreyash@gmail.com",
     fullName : {
         userFullName : {
             firstName : "Shreyash", 
