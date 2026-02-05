@@ -59,6 +59,61 @@ PromiseThree.then((userinfo)=>{
     
 })
 
+   
+// *********  Chained Promise Consumption (Promise Chaining ******************* 
 
-// ******************************* Promise Four**************************************
+// then is used to perform some task after the promise is resolved
+// catch is used to handle the error if the promise is rejected
+// finally is used to perform some task after the promise is either resolved or rejected
+// this is clean promise workflow and is used to avoid callback hell
 
+ 
+const PromiseFour =  new Promise((resolve , reject) => {
+
+
+    setTimeout(() => {
+
+        const rnd = [true , false]
+       let rndIndex = Math.floor(Math.random()*rnd.length);
+
+        const error = rnd[rndIndex]
+
+        if (!error) {
+
+            resolve({username : "101shreyash" , userID : 41414141})
+            
+        } else{
+
+            reject('Something Went Wrong')
+        }
+           
+    }, 1000);
+    
+})
+
+ PromiseFour
+
+ .then((userinfo)=>{
+
+    console.log(userinfo);
+    return userinfo.username
+    
+})
+.then((userinfo)=>{
+
+    console.log(userinfo);
+    
+
+})
+
+.catch((err)=>{
+    
+    console.log(err);
+    
+})
+
+.finally(()=>{
+
+    console.log('The Promise is Either Resolved or Rejected');
+    
+})
