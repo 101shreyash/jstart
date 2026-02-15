@@ -1,58 +1,32 @@
+const p1 = new Promise((resolve, reject) => {
+  let reqfrom = "https://randomuser.me/api/";
 
-const p1 = new Promise((resolve , reject) =>{
-
-
- let reqfrom = "https://randomuser.me/api/"
-
- const xhr = new XMLHttpRequest ()
- xhr.open('GET' , reqfrom)
- xhr.onreadystatechange = (()=>{
-
-
-     if(xhr.readyState === 4){
-
-
-        if (xhr.status === 200) {
-
-            resolve(xhr.responseText)
-            
-        }
-
-        else{
-
-             reject ('Something Went Wrong')
-
-        }
-
+  const xhr = new XMLHttpRequest();
+  xhr.open("GET", reqfrom);
+  xhr.onreadystatechange = () => {
+    if (xhr.readyState === 4) {
+      if (xhr.status === 200) {
+        resolve(xhr.responseText);
+      } else {
+        reject("Something Went Wrong");
+      }
     }
+  };
 
- })
+  xhr.send();
+});
 
-xhr.send()
-
-
+p1.then((info) => {
+  console.log(info);
 })
 
-p1
+  .catch((error) => {
+    console.log(error);
+  })
 
-.then((info)=>{
-
-    console.log(info);
-    
-})
-
-.catch ((error)=>{
-
-console.log(error);
-
-
-})
-
-.finally(()=>{
-
-    console.log('Either Its Rejected or Resolved');
-    
-})
+  .finally(() => {
+    console.log("Either Its Rejected or Resolved");
+  });
 
 /*
 
@@ -77,8 +51,6 @@ So:
 Browser  → use XMLHttpRequest
 Node     → use fetch
 */
-
-
 
 // Browser networking (old):
 
