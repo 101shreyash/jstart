@@ -154,3 +154,41 @@ async function consumePromiseFive() {
 }
 
 consumePromiseFive()
+
+
+
+
+// ---------  intro to Fetch ,  consuming Promise Using Async Await also with  .then  ------
+
+// AsyncAwait
+
+async function response(){
+
+const aftermath =  await fetch("https://randomuser.me/api/")
+const intoJson =  await aftermath.json()
+
+console.log( 'asyncAwait --- ', intoJson);
+
+
+}
+
+response()
+
+
+
+// .then ------------------------------
+
+
+fetch("https://randomuser.me/api/")
+
+.then((response) =>{
+
+return response.json()
+
+})
+.then((data) =>{
+
+    console.log('.then', data);
+    
+
+})
