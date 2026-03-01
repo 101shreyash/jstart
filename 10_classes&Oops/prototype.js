@@ -1,1 +1,1 @@
-// lets learn about protype inheritance and prototype in javascript
+// here we will be learning about protypes in js 
