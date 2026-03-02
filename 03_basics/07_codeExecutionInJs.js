@@ -1,16 +1,13 @@
-// The working of the JavaScript works on three phases:
-// 1. Global Execution Context
-// 2. Memory phase / Creation phase
-// 3. Execution phase
+Code runs inside a global execution context first. also known as Global Environment 
+That context goes through  two phases memory phase and execution phase.
 
-// *** Phase 1: Global Execution Context
-// The value of `this` keyword is set to Global Execution Context (which is an empty Object in NODE environment, & window object in browser environment)
+In memory phase, variables are set to undefined (let/const stay uninitialized), functions store their definitions. 
+                                                 
+  In execution phase, statements run.
 
-// ***Phase 2: Memory phase
-// During this phase, JS engine scans the code and assigns the initial values for the variables , functions, etc.. For variables they are 'undefined' and for functions they are set to their function definition
+When a function is called during execution, a new function execution context is created and pushed onto the call stack. That context also has its own memory phase and execution phase.
 
-// *** Phase 3: Execution phase
-// After the creation phase completed, the execution phase begins where actual values of the variables are set. And when the functions are called it creates a new 'Function Execution' context which consists of two phases (they works same as explained above but only for the particular function scope):
-// 1. Memory phase 
-// 2. Execution phase 
-// The return value of the 'Function Execution' context is passed to the Global Execution Context
+Functions execute fully before being popped from the stack. It is not “line by line getting out of the stack” 
+the entire function context stays on the stack until it finishes. After it returns, it is removed. If functions are nested, the stack follows LIFO order.
+
+The return value goes to the caller context, not directly to global automatically.
