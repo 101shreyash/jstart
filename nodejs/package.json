@@ -4,10 +4,10 @@
   "description": "",
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
+  "type": "module",
   "main": "hello.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1", 
-    "start": "node hello.js"
+    "start": "node index.js && node utils.js"
   }
 }
